@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 90%;  /* */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    align-items: center;
+}
+
+img {
+    max-height: 50rem;
+    max-width: 50rem;
+    width: auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 400 1rem 'Dm Sans', 'sans-serif';
+    color: var(--text-color);
+    background: var(--body-color);
+}
+
+.logo h1 {
+    font: 400 1.5rem 'Dancing Script', 'sans-serif';
+    color: var(--title-color);
+}
+
+.logo span {
+    color: var(--base-color);
+}
+
+h1 {
+    font: 700 1.5rem 'Poppins', 'sans-serif';
+    color: var(--title-color);
+}
+
+h2 {
+    color : var(--title-color);
+}
+
+section {
+    padding: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.home .texto {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+.home .texto h1 {
+    margin-bottom: 1rem;
+}
+
+.home .texto p {
+    margin-bottom: 1.5rem;
+}
+
+
+.home .imagem {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+.button {
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    display: inline-flex;
+    height: 3.5rem;
+    align-items: center;
+    padding: 0 2rem;
+    font: 500 1rem 'Dm Sans', sans-serif;
+    transform: background 0.3s;
+}
+
+.button:hover {
+    background: var(--base-color-alt);
+}
+
+:root {
+    /* colors */
+    --hue: 159;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+}
